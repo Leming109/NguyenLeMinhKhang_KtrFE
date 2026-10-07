@@ -1,0 +1,241 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" 
+          href="~/Content/MyCss/WebDonHang.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title></title>
+</head>
+<body>
+    <div class="banner">
+        Freeship đơn từ 45k, giảm nhiều hơn cùng
+        <span class="highlight">FREESHIP </span><span class="highlightnext">EXTRA</span>
+    </div>
+    <header>
+        <div class="header-top">
+            <div class="logo">TIKI</div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Freeship đơn từ 45k">
+                <button>Tìm kiếm</button>
+            </div>
+
+            <div class="menu">
+                <a href="#">
+                    <i class="fa-use"></i>
+                    <span>Trang chủ</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Tài khoản</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Giỏ hàng</span>
+                </a>
+            </div>
+        </div>
+        <div class="services">
+
+            <span class="=camket">Cam kết</span>
+
+            <span>
+                <i class="fa-solid fa-shield"></i>
+                100% hàng thật
+            </span>
+
+            <span>
+                <i class="fa-solid fa-arrows-rotate"></i>
+                Hoàn 200% nếu hàng giả
+            </span>
+
+            <span>
+                <i class="fa-solid fa-box"></i>
+                30 ngày đổi trả
+            </span>
+
+            <span>
+                <i class="fa-solid fa-truck"></i>
+                Giao nhanh 2h
+            </span>
+
+        </div>
+    </header>
+    <div class="content">
+
+        <div class="product-image">
+            <div class="thumbnail">
+                <img src="~/Content/Myimg/sua-glucerna-uc-hop-850gr-a2.jpg">
+                
+            </div>
+        </div>
+
+
+        <div class="product-info">
+
+            <div class="brand">
+                Thương hiệu: <b>Glucerna</b>
+            </div>
+
+            <h1>
+                Lon Sữa Glucerna 800g/lon - Tặng 2 gói dùng thử
+            </h1>
+
+            <div class="rating">
+                <b>5.0</b>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <span>(11)</span>
+                | Đã bán 436
+            </div>
+
+            <p>Made in Spain</p>
+
+            <div class="price">
+                <span>1.034.550₫</span>
+            </div>
+
+            <div class="flavor">
+                <b>Hương vị</b>
+                <br>
+                <button>Vani</button>
+            </div>
+
+            <div class="shipping">
+                <h3>Thông tin vận chuyển</h3>
+
+                <p>
+                    Giao đến Q.1, P. Bến Nghé, Hồ Chí Minh
+                </p>
+
+                <hr>
+
+                <p>
+                    <i class="fa-solid fa-truck-fast"></i>Giao siêu tốc 2h
+                </p>
+
+                <p>
+                    Trước 11h hôm nay: <b>Miễn phí</b> <span style="text-decoration:line-through">25.000₫</span>
+                </p>
+
+                <hr>
+
+                <p>
+                    <i class="fa-solid fa-truck-fast"></i>Giao đúng sáng mai
+                </p>
+
+                <p>
+                    8h - 12h, 01/10: <b>Miễn phí</b> <span style="text-decoration:line-through">19.600₫</span>
+                </p>
+
+                <hr>
+
+
+                <p>
+                    <i class="fa-solid fa-truck-fast"></i> Freeship 10k đơn từ 45k,
+                    Freeship 25k đơn từ 100k
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="cart-box">
+
+            <h3>Tiki Trading</h3>
+
+            <hr>
+
+            <p><b>Vani</b></p>
+
+            <label>Số lượng</label>
+
+            <div class="quantity">
+                <button onclick="giamSoLuong()">−</button>
+
+                <input type="text"
+                       id="soLuong"
+                       value="1"
+                       readonly>
+
+                <button onclick="tangSoLuong()">+</button>
+            </div>
+
+
+            <div class="subtotal">
+
+                <p>Tạm tính</p>
+
+                <h2 id="tamTinh">
+                    1.034.550₫
+                </h2>
+
+            </div>
+
+
+            <button class="buy-now">
+                Mua ngay
+            </button>
+
+            <button class="add-cart">
+                Thêm vào giỏ
+            </button>
+
+            <button class="buy-later">
+                Mua trước trả sau
+            </button>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        let giaSanPham = 1034550;
+
+        let soLuong = 1;
+
+
+        function tinhTamTinh() {
+
+            let tamTinh = soLuong * giaSanPham;
+
+            document.getElementById("tamTinh").innerHTML =
+                tamTinh.toLocaleString("vi-VN") + "₫";
+        }
+
+
+        function tangSoLuong() {
+
+            soLuong++;
+
+            document.getElementById("soLuong").value = soLuong;
+
+            tinhTamTinh();
+        }
+
+
+        function giamSoLuong() {
+
+            if (soLuong > 1) {
+
+                soLuong--;
+
+                document.getElementById("soLuong").value = soLuong;
+
+                tinhTamTinh();
+            }
+        }
+
+
+        tinhTamTinh();
+    </script>
+</body>
+</html>

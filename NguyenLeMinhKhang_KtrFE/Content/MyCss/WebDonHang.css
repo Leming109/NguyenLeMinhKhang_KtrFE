@@ -1,0 +1,347 @@
+﻿.banner {
+    background: #eef4ef;
+    color: #0d8b5b;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.highlight {
+    color: #0066ff;
+    font-weight: 700;
+    font-style: italic;
+}
+.highlightnext {
+    color: #00ff21;
+    font-weight: 700;
+    font-style: italic;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+}
+
+.header-top {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.logo {
+    width: 150px;
+    font-family: Arial, sans-serif;
+    font-size: 45px;
+    color: #02beff
+}
+
+    
+
+.search-box {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 40px;
+    display:flex;
+    align-items: center;
+}
+
+    .search-box i {
+        padding-left: 10px;
+        color: gray;
+    }
+
+    .search-box input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+    }
+
+    .search-box button {
+        height: 100%;
+        width: 100px;
+        border: none;
+        border-left: 1px solid #ccc;
+        background: white;
+        color: #0d5eff;
+        cursor: pointer;
+    }
+
+.menu {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .menu a {
+        text-decoration: none;
+        color: gray;
+    }
+
+        .menu a:hover {
+            color: #0d5eff;
+        }
+
+.services {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid #ddd;
+    color: cornflowerblue;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.services span {
+    font-size: 14px;
+    border-left: 1px solid gray;
+}
+
+ 
+.services i {
+    color: #0d5eff;
+}
+
+.camket {
+    font-size: 30px;
+}
+
+body {
+    font-family: Arial;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+
+.content {
+    width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.product-image {
+    width: 270px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+   
+
+.thumbnail {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+    .thumbnail img {
+        width: 250px;
+        height: 500px;
+        object-fit: contain;
+        cursor: pointer;
+        border: 1px solid #ddd;
+    }
+
+
+
+.product-info {
+    width: 570px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.brand {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-info h1 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.rating {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+    .rating span {
+        color: #777;
+    }
+
+    .rating i {
+        color: #f9e41d;
+    }
+
+
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+.flavor {
+    margin-top: 20px;
+}
+
+    .flavor button {
+        margin-top: 10px;
+        padding: 8px 15px;
+        background-color: white;
+        border: 2px solid #0b74ff;
+        border-radius: 5px;
+        color: #0b74ff;
+    }
+
+    .flavor button:hover {
+        background-color: #0b74ff;
+        color: white;
+    }
+
+
+
+.shipping {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+    .shipping h3 {
+        font-size: 18px;
+    }
+
+    .shipping p {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .shipping b {
+        color: green;
+    }
+
+
+
+.cart-box {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+    .cart-box h3 {
+        font-size: 18px;
+    }
+
+    .cart-box hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .cart-box label {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+
+
+.quantity {
+    display: flex;
+}
+
+    .quantity button {
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        border: 1px solid #ccc;
+        font-size: 18px;
+    }
+
+    .quantity input {
+        width: 45px;
+        height: 31px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+
+
+
+.subtotal {
+    margin-top: 25px;
+}
+
+    .subtotal p {
+        margin-bottom: 10px;
+    }
+
+    .subtotal h2 {
+        font-size: 24px;
+    }
+
+
+
+.buy-now {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background-color: #ff424f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buy-now:hover {
+    background-color: #e60000;
+}
+
+.add-cart {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    background-color: white;
+    color: #0b74ff;
+    border: 1px solid #0b74ff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-cart:hover {
+    background-color: #0b74ff;
+    color: white;
+}
+
+.buy-later {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    background-color: white;
+    color: #0b74ff;
+    border: 1px solid #0b74ff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.buy-later:hover {
+    background-color: #0b74ff;
+    color: white;
+}
